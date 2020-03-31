@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Books',
     'qa',
     'Music',
+    'HTML',
 ]
 
 MIDDLEWARE = [

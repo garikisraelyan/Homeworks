@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('Car.urls')),
     path('qa/', include('qa.urls')),
     path('Music/', include('Music.urls')),
+    path('HTML/', include('HTML.urls')),
 ]
