@@ -2,6 +2,7 @@ from django.shortcuts import render
 from datetime import datetime
 # Create your views here.
 from Form.models import Form
+from Person.models import Person
 
 def html_file1(request):
 	obj_1 = Form.objects.all()[0]
@@ -18,3 +19,19 @@ def html_file1(request):
 
 def html_file2(request):
 	return render(request, 'HTML/file2.html')
+
+
+def find_pers(request, person_id):
+	obj = Person.objects.get(pk=person_id)
+	dict2 = {
+		'Name': obj.first_name,
+		'Surname': obj.last_name,
+		'Image': obj.image,
+	}
+	return render(request, 'HTML/file_pers.html', dict2)
+
+
+def new_find(request, person_id):
+	obj_2 = Person.objects.get(pk=person_id)
+	context = {'person_info': obj_2}
+	return render(request, 'HTML/new_file.html', context)

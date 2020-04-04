@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" type='text/css' href="{% static 'HTML/styles_pers.css' %}">
+
+
+
+<p>{{person_info.first_name}}</p>
+<p>{{person_info.last_name}}</p>
+<img src="{{ person_info.profile_pic.url }}" width="100" height="200">
+
