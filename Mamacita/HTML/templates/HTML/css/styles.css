@@ -1,0 +1,42 @@
+.above {
+	color: LightGrey;
+	font-family: arial;
+	font-size: 83%;
+	padding-left: 88%;
+}
+
+#g_1 {
+	color: DodgerBlue;
+}
+
+#o_1 {
+	color: Tomato;
+}
+
+#o_2 {
+	color: Orange;
+}
+
+#g_2 {
+	color: DodgerBlue;
+}
+
+#l {
+	color: MediumSeaGreen;
+}
+
+#e {
+	color: Orange;
+}
+
+.name {
+	display: flex;
+	padding-left: 37%;
+	padding-top: 8%;
+	font-family: roboto;
+	font-size: 300%;
+}
+
+.main {
+	padding-left: 41%;
+}

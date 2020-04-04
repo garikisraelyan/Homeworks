@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
 	path('', views.html_file1),
-	path('', views.html_file2),
+	path('file2', views.html_file2)
 ]
