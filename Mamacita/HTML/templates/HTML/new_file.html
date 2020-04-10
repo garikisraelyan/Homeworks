@@ -1,10 +1,12 @@
 {% load static %}
-
-<link rel="stylesheet" type='text/css' href="{% static 'HTML/styles_pers.css' %}">
-
+<link rel="stylesheet" type='text/css' href="{% static 'HTML/personstyle.css' %}">
 
 
-<p>{{person_info.first_name}}</p>
-<p>{{person_info.last_name}}</p>
-<img src="{{ person_info.profile_pic.url }}" width="100" height="200">
+<div class="obj">
+	<p class="info">{{person_info.first_name}} {{person_info.last_name}}</p>
+	<img src="{{ person_info.profile_pic.url }}" class="pic">
+</div>
+
+<!-- <h1 class="yes">Garik</h1> -->
+
 
