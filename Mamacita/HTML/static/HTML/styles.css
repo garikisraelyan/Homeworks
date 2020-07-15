@@ -31,13 +31,15 @@
 
 .name {
 	display: flex;
-	padding-left: 37%;
-	padding-top: 8%;
+	/*padding-left: 37%;
+	padding-top: 8%;*/
+	text-align: center;
 	font-family: roboto;
 	font-size: 300%;
 }
 
 .main {
-	padding-left: 41%;
+	text-align: center;
+	padding-bottom: 15%; 
 }
 

@@ -40,16 +40,16 @@ def new_find(request, person_id):
 
 
 def find_name(request):
-	if request.method == "POST":
+	if request.method == 'POST':
 		form = NameForm(request.POST)
 		# print(request.POST['your_name'])
 
 		if form.is_valid():
-			return HttpResponseRedirect('/Person/my_name')
+			form.save()
 	else:
 		form = NameForm()
 
 	return render(request, 'HTML/forms.html', {'form': form})
 
-# def go_to(request):
-# 	return HttpResponse('hi')
+def go_to(a):
+	pass

@@ -1,0 +1,8 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'HTML/styles.css' %}">
+
+<form action="create" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{ form }}
+	<input type="submit" value="OK">
+</form>
