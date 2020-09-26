@@ -1,0 +1,16 @@
+<!-- <form action="thanks/" method="post">
+	{% csrf_token %}
+	<label>Car Name:</label><br>
+	<input type="text" name="name"><br>
+	<label>Car Color:</label><br>
+	<input type="text" name="color"><br>
+	<label>Year:</label><br>
+	<input type="number" name="year" min="1879" max="2020"><br>
+	<input type="submit" name="submit" value="Register">
+</form> -->
+
+<form method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" name="register" value="Register">
+</form>
